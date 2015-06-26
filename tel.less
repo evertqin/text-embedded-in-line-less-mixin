@@ -1,0 +1,51 @@
+.text_embedded_in_line(@leftPercent) {
+    .tel_divider {
+        height: 10px;
+    }
+
+    .tel_text_seperator {
+        display: table;
+        .line {
+            &:before {
+                content:"";
+                height:1px;
+                display:block;
+                width:100%;
+                margin: 1px 0 0;
+                background-color:#000000;
+                min-width:20px;
+                opacity:0.3;
+            }
+
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            vertical-align: middle;
+            padding: 0;
+            display: table-cell;
+        }
+    }
+    .tel_text_seperator
+    {
+
+        .line-text {
+            padding-left: 10px;
+            font-size: 20px;
+            display: inline-block;
+            text-transform: uppercase;
+            opacity: 0.7;
+        }
+        .line-left {
+            width:  @leftPercent;
+        }
+
+        .line-right {
+            padding-left: 10px;
+        }
+
+
+    }
+}
+.tel_wrapper {
+    .text_embedded_in_line(5%)
+}
