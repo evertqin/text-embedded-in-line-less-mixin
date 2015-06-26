@@ -2,4 +2,4 @@
 A small mixin to create text embedded in line.
 
 The result is somewhere like this.
-[logo]: https://github.com/evertqin/text-embedded-in-line-less-mixin/blob/master/screenshot.png
+![screenshot] (https://github.com/evertqin/text-embedded-in-line-less-mixin/blob/master/screenshot.png)
